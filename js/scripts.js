@@ -167,9 +167,13 @@ $(window).scroll(function () {
         //console.log('a');
         $('.introend').addClass('change');
         $('.itemBox').addClass('show');
+        $('.itemBox2').addClass('show2');
+        $('.project1').addClass('show3');
     } else {
         //console.log('a');
         $('.introend').removeClass('change');
         $('.itemBox').removeClass('show');
+        $('.itemBox2').removeClass('show2');
+        $('.project1').removeClass('show3');
     }
 });
