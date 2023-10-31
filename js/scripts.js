@@ -177,3 +177,17 @@ $(window).scroll(function () {
         $('.project1').removeClass('show3');
     }
 });
+$(window).scroll(function () {
+    var height300 = parseInt($(window).height() * 5);
+    var scroll = $(window).scrollTop();
+    //console.log(scroll);
+    if (scroll >= height300) {
+        //console.log('a');
+
+        $('.contact').addClass('show4');
+    } else {
+        //console.log('a');
+
+        $('.contact').removeClass('show4');
+    }
+});

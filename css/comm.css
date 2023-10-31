@@ -716,6 +716,33 @@ body {
   max-width: 300px;
 }
 
+.contact {
+  display: flex;
+  position: absolute;
+  top: 600vh;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  transition: all 1s;
+}
+.contact .qr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.contact .qr img {
+  width: 50%;
+  height: 50%;
+}
+
+.contact.show4 {
+  top: 500vh;
+}
+
 /* 스크롤바 설정*/
 html::-webkit-scrollbar {
   width: 2px;
