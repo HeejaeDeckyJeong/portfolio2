@@ -272,11 +272,8 @@ sup {
 }
 
 a {
-    color: var(--bs-link-color);
-    text-decoration: underline;
-}
-a:hover {
-    color: var(--bs-link-hover-color);
+    color: #000;
+    text-decoration: none;
 }
 
 a:not([href]):not([class]),

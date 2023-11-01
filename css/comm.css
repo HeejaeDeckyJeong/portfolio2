@@ -272,12 +272,8 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
-  text-decoration: underline;
-}
-
-a:hover {
-  color: var(--bs-link-hover-color);
+  color: #000;
+  text-decoration: none;
 }
 
 a:not([href]):not([class]),
@@ -542,6 +538,38 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+.wrap .nav {
+  font-family: "NanumSquareNeoTTF-aLt";
+  position: fixed;
+  display: block;
+  top: 15px;
+  right: 10px;
+  text-align: right;
+  z-index: 5000;
+}
+.wrap .nav .logo {
+  font-size: 23px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.wrap .nav .nb {
+  display: inline-block;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #000;
+  transition: background 0.3s ease-in-out;
+  padding: 0 20px;
+  margin-bottom: -1px;
+}
+.wrap .nav .nb p {
+  font-weight: 600;
+  line-height: 3;
+}
+.wrap .nav .nb:hover {
+  background: skyblue;
+  color: #000;
+}
 .wrap .introText {
   display: flex;
   width: 100vw;
@@ -653,10 +681,14 @@ body {
 .wrap .sitedesc {
   width: 33%;
   height: 100%;
+  padding-left: 3px;
 }
 .wrap .sitedesc h3 {
   font-family: "NanumSquareNeoVariable";
   color: #000;
+}
+.wrap .sitedesc i {
+  margin-right: 10px;
 }
 .wrap .show3 {
   top: 200vh;
@@ -757,4 +789,51 @@ html::-webkit-scrollbar-thumb {
 /* 스크롤바 뒷 배경 설정*/
 html::-webkit-scrollbar-track {
   background-color: #fff;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: #000;
+}
+
+a:hover {
+  position: relative;
+  color: gray;
+}
+
+@media (max-width: 1200px) {
+  .wrap .project {
+    flex-direction: column;
+  }
+  .wrap .project .siteimage {
+    width: 80%;
+    height: 45%;
+  }
+  .wrap .project .siteimage .img {
+    background-position: center !important;
+    height: 100% !important;
+  }
+  .wrap .project .sitedesc {
+    width: 80%;
+  }
+  .wrap .project .sitedesc h3 {
+    white-space: nowrap;
+  }
+}
+.anchor div {
+  position: absolute;
+  left: 0;
+}
+.anchor #navIntro {
+  top: 0;
+}
+.anchor #navPortfolio {
+  top: 180vh;
+}
+.anchor #navSkills {
+  top: 485vh;
+}
+.anchor #navContact {
+  top: 550vh;
 }/*# sourceMappingURL=comm.css.map */

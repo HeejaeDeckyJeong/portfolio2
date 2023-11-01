@@ -15,6 +15,45 @@ body {
     width: 100vw;
     justify-content: center;
     flex-direction: column;
+    .nav {
+        font-family: 'NanumSquareNeoTTF-aLt';
+        position: fixed;
+        display: block;
+        top: 15px;
+        right: 10px;
+        text-align: right;
+        z-index: 5000;
+
+        .logo {
+            font-size: 23px;
+            font-weight: 800;
+
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .nb {
+            display: inline-block;
+
+            height: 50px;
+            background: #fff;
+            border: 1px solid #000;
+            transition: background 0.3s ease-in-out;
+            // border-bottom: none;
+            padding: 0 20px;
+            margin-bottom: -1px;
+            p {
+                font-weight: 600;
+                line-height: 3;
+            }
+        }
+        .nb:hover {
+            background: skyblue;
+            color: #000;
+        }
+        // .nb:last-child {
+        //     border-bottom: 1px solid #000;
+        // }
+    }
     .introText {
         display: flex;
         width: 100vw;
@@ -125,9 +164,13 @@ body {
     .sitedesc {
         width: 33%;
         height: 100%;
+        padding-left: 3px;
         h3 {
             font-family: 'NanumSquareNeoVariable';
             color: #000;
+        }
+        i {
+            margin-right: 10px;
         }
     }
     .show3 {
@@ -227,4 +270,54 @@ html::-webkit-scrollbar-thumb {
 /* 스크롤바 뒷 배경 설정*/
 html::-webkit-scrollbar-track {
     background-color: #fff;
+}
+a:link,
+a:visited,
+a:active {
+    color: #000;
+}
+a:hover {
+    position: relative;
+    color: gray;
+}
+// 반응형
+@media (max-width: 1200px) {
+    .wrap {
+        .project {
+            flex-direction: column;
+            .siteimage {
+                width: 80%;
+                height: 45%;
+
+                .img {
+                    background-position: center !important;
+                    height: 100% !important;
+                }
+            }
+            .sitedesc {
+                width: 80%;
+                h3 {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+.anchor {
+    div {
+        position: absolute;
+        left: 0;
+    }
+    #navIntro {
+        top: 0;
+    }
+    #navPortfolio {
+        top: 180vh;
+    }
+    #navSkills {
+        top: 485vh;
+    }
+    #navContact {
+        top: 550vh;
+    }
 }
