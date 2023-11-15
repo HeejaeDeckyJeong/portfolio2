@@ -732,7 +732,7 @@ body {
   justify-content: center;
   width: 70vw;
   flex-wrap: wrap;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 #skill .skillLst div {
   width: 10vw;
@@ -744,6 +744,7 @@ body {
   height: 100%;
 }
 #skill .skillLst .long {
+  margin-top: 0;
   width: auto;
   max-width: 300px;
 }
@@ -772,7 +773,7 @@ body {
 }
 
 .contact.show4 {
-  top: 500vh;
+  top: 510vh;
 }
 
 /* 스크롤바 설정*/
