@@ -169,16 +169,18 @@ $(window).scroll(function () {
         $('.itemBox').addClass('show');
         $('.itemBox2').addClass('show2');
         $('.project1').addClass('show3');
+        $('.logo').addClass('black');
     } else {
         //console.log('a');
         $('.introend').removeClass('change');
         $('.itemBox').removeClass('show');
         $('.itemBox2').removeClass('show2');
         $('.project1').removeClass('show3');
+        $('.logo').removeClass('black');
     }
 });
 $(window).scroll(function () {
-    var height300 = parseInt($(window).height() * 5);
+    var height300 = parseInt($(window).height() * 5.1);
     var scroll = $(window).scrollTop();
     //console.log(scroll);
     if (scroll >= height300) {
@@ -189,5 +191,78 @@ $(window).scroll(function () {
         //console.log('a');
 
         $('.contact').removeClass('show4');
+    }
+});
+// 내비게이션 바 색깔
+$(window).scroll(function () {
+    var height0 = parseInt($(window).height() * 1);
+    var scroll = $(window).scrollTop();
+    //console.log(scroll);
+    if (scroll >= height0) {
+        //console.log('a');
+        $('.1').removeClass('navAcitive');
+        $('.2').addClass('navAcitive0');
+    } else {
+        //console.log('a');
+
+        $('.1').addClass('navAcitive');
+        $('.2').removeClass('navAcitive0');
+    }
+});
+$(window).scroll(function () {
+    var height0 = parseInt($(window).height() * 2);
+    var scroll = $(window).scrollTop();
+    //console.log(scroll);
+    if (scroll >= height0) {
+        //console.log('a');
+        $('.2').addClass('navAcitive1');
+    } else {
+        //console.log('a');
+
+        $('.2').removeClass('navAcitive1');
+    }
+});
+$(window).scroll(function () {
+    var height0 = parseInt($(window).height() * 3);
+    var scroll = $(window).scrollTop();
+    //console.log(scroll);
+    if (scroll >= height0) {
+        //console.log('a');
+        $('.2').addClass('navAcitive2');
+    } else {
+        //console.log('a');
+
+        $('.2').removeClass('navAcitive2');
+    }
+});
+$(window).scroll(function () {
+    var height0 = parseInt($(window).height() * 4);
+    var scroll = $(window).scrollTop();
+    //console.log(scroll);
+    if (scroll >= height0) {
+        //console.log('a');
+        $('.2').removeClass('navAcitive2');
+        $('.2').removeClass('navAcitive1');
+        $('.2').removeClass('navAcitive0');
+        $('.3').addClass('navAcitive');
+    } else {
+        //console.log('a');
+
+        $('.3').removeClass('navAcitive');
+    }
+});
+$(window).scroll(function () {
+    var height0 = parseInt($(window).height() * 5);
+    var scroll = $(window).scrollTop();
+    //console.log(scroll);
+    if (scroll >= height0) {
+        //console.log('a');
+        $('.3').removeClass('navAcitive');
+        $('.4').addClass('navAcitive');
+        $('.logo').removeClass('black');
+    } else {
+        //console.log('a');
+
+        $('.4').removeClass('navAcitive');
     }
 });

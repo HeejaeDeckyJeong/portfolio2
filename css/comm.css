@@ -751,7 +751,7 @@ body {
 .contact {
   display: flex;
   position: absolute;
-  top: 600vh;
+  top: 610vh;
   width: 100vw;
   height: 100vh;
   background: #000;
@@ -836,4 +836,31 @@ a:hover {
 }
 .anchor #navContact {
   top: 550vh;
+}
+.anchor .navAcitive {
+  background: skyblue;
+}
+
+.wrap .nav .navAcitive {
+  background: skyblue;
+}
+
+.wrap .nav .navAcitive0 {
+  background: rgb(38, 126, 160);
+}
+
+.wrap .nav .navAcitive1 {
+  background: rgb(235, 135, 212);
+}
+
+.wrap .nav .navAcitive2 {
+  background: rgb(212, 235, 135);
+}
+
+.wrap .nav .logo {
+  transition: color 0.3s linear;
+}
+
+.wrap .nav .black {
+  color: #000;
 }/*# sourceMappingURL=comm.css.map */
