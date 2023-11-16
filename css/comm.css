@@ -617,17 +617,36 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  transition: top -1s ease 0s, width 3s ease 0s;
+  transition: top 0.1s ease 0s, width 0.7s ease;
 }
 .wrap .show2 {
   background: rgb(253, 254, 255);
-  width: 90%;
+  width: 100%;
   opacity: 0.5;
 }
-.wrap .project {
+.wrap .projectTitle {
+  display: none;
+  position: absolute;
+  z-index: 4;
+  top: 150vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.wrap .projectTitle h2 {
+  font-size: 10rem;
+  color: #6b8da0;
+  font-family: "Parisienne";
+  text-shadow: -0.08em 0.08em #c9d5db;
+}
+.wrap .projectTitle.activeT {
+  display: block;
+}
+
+.project {
   justify-content: center;
 }
-.wrap .project1 {
+
+.project1 {
   position: absolute;
   display: flex;
   top: 280vh;
@@ -639,7 +658,8 @@ body {
   transition: all 1s;
   transition-delay: 0.2s;
 }
-.wrap .project2 {
+
+.project2 {
   position: absolute;
   display: flex;
   top: 300vh;
@@ -649,7 +669,8 @@ body {
   height: 100vh;
   z-index: 3;
 }
-.wrap .project3 {
+
+.project3 {
   position: absolute;
   display: flex;
   top: 400vh;
@@ -659,46 +680,51 @@ body {
   height: 100vh;
   z-index: 3;
 }
-.wrap .siteimage {
+
+.siteimage {
   width: 67%;
   height: 100%;
 }
-.wrap .siteimage #kespaImg {
+.siteimage #kespaImg {
   width: 100%;
   height: 50%;
   background: url(../assets/img/kespa.JPG) 0 0/contain no-repeat;
 }
-.wrap .siteimage #dogImg {
+.siteimage #dogImg {
   width: 100%;
   height: 50%;
   background: url(../assets/img/dogbnb.JPG) 0 0/contain no-repeat;
 }
-.wrap .siteimage #bikeImg {
+.siteimage #bikeImg {
   width: 100%;
   height: 50%;
   background: url(../assets/img/seoulbike.JPG) 0 0/contain no-repeat;
 }
-.wrap .sitedesc {
+
+.sitedesc {
   width: 33%;
   height: 100%;
   padding-left: 3px;
 }
-.wrap .sitedesc h3 {
+.sitedesc h3 {
   font-family: "NanumSquareNeoVariable";
   color: #000;
 }
-.wrap .sitedesc i {
+.sitedesc i {
   margin-right: 10px;
 }
-.wrap .show3 {
+
+.show3 {
   top: 200vh;
 }
-.wrap .project__stack {
+
+.project__stack {
   display: flex;
   flex-wrap: wrap;
   margin: 1.2em 0;
 }
-.wrap .project__stack-item {
+
+.project__stack-item {
   list-style: none;
   margin: 0.5em;
   font-weight: 500;
@@ -778,7 +804,7 @@ body {
 
 /* 스크롤바 설정*/
 html::-webkit-scrollbar {
-  width: 2px;
+  width: 4px;
 }
 
 /* 스크롤바 막대 설정*/
